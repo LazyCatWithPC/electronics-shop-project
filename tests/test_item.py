@@ -12,6 +12,11 @@ def test_repr(item_laptop):
     assert repr(item_laptop) == "Item('laptop', 25000, 4)"
 
 
+def test_add(item_laptop):
+    quantity = item_laptop + Item('test', 100, 3)
+    assert quantity == 7
+
+
 def test_str(item_laptop):
     assert str(item_laptop) == 'laptop'
 
